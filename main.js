@@ -28,7 +28,7 @@ function gotResults(results){
         noseY = results[0].pose.nose.y;
         leftWristX = results[0].pose.leftWrist.x;
         rightWristX = results[0].pose.rightWrist.x;
-        difference = leftWristX - rightWristX;
+        difference = floor(leftWristX - rightWristX);
         difference1 = floor(difference);
         difference2 = ceil(difference);
     }
@@ -36,7 +36,7 @@ function gotResults(results){
 
 function draw(){
     background("#FF0000");
-    document.getElementById("value").innerHTML = "Width And The Height Of The Square Is ( floor() )" + difference1;
+    document.getElementById("value").innerHTML = "Width And The Height Of The Square Is ( floor() )" + difference;
     document.getElementById("value1").innerHTML = "Width And The Height Of The Square Is ( ceil() )" + difference2;
 
     fill("#0000FF");
