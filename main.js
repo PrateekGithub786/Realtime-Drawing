@@ -1,8 +1,6 @@
 noseX = 0;
 noseY = 0;
 difference = 0;
-difference1 = 0;
-difference2 = 0;
 leftWristX = 0;
 rightWristX = 0;
 
@@ -29,15 +27,16 @@ function gotResults(results){
         leftWristX = results[0].pose.leftWrist.x;
         rightWristX = results[0].pose.rightWrist.x;
         difference = floor(leftWristX - rightWristX);
-        difference1 = floor(difference);
-        difference2 = ceil(difference);
+        console.log(noseX);
+        console.log(noseY);
+        console.log(leftWristX);
+        console.log(rightWristX);
     }
 }
 
 function draw(){
     background("#FF0000");
-    document.getElementById("value").innerHTML = "Width And The Height Of The Square Is ( floor() )" + difference;
-    document.getElementById("value1").innerHTML = "Width And The Height Of The Square Is ( ceil() )" + difference2;
+    document.getElementById("value").innerHTML = "Width And The Height Of The Square Is " + difference;
 
     fill("#0000FF");
     stroke("#000000");
