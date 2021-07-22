@@ -36,7 +36,7 @@ function gotResults(results){
 
 function draw(){
     background("#FF0000");
-    document.getElementById("value").innerHTML = "Width And The Height Of The Square Is: " + difference;
+    document.getElementById("value").innerHTML = "Width And The Height Of The Square Is " + difference;
 
     fill("#0000FF");
     stroke("#000000");
