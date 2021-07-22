@@ -1,0 +1,32 @@
+body{
+   background-color: greenyellow;
+}
+
+.heading{
+    font-size: 30px;
+    width: 100%;
+    margin: 0px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.note{
+    color: black;
+    font-size: 15px;
+}
+
+.footer{
+    background-color: grey;
+    color: red;
+    font-size: 20px;
+    line-height: 3;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    position: fixed;
+}
+
+canvas{
+    border: 5px solid red;
+    border-radius: 30px;
+    box-shadow: 5px 5px 6px grey;
+}
